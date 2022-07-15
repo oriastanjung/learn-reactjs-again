@@ -1,0 +1,7 @@
+so basic ly react portals is where we see a bunch of component which not semanticly output
+on the page.. such as modal component. since it was modal component, it should 
+overlay all other component, so it have to be at the top of the structure.
+portals are made to solve this.
+first we need to create some portal at index.html on public
+then create portal using ReactDOM.createPortal()
+see at error modal component

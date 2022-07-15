@@ -1,0 +1,9 @@
+its simple enclosure tag that not repeat its tag. but it will render only the content
+inside the fragment tag
+<React.fragment>
+    content
+ </React.Fragment>
+or 
+<>
+    content
+ </>

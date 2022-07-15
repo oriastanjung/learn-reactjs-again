@@ -1,0 +1,8 @@
+1. dont panic :)
+2. inspect first and read the error message..
+3. see the code on where the line error is, then try to read the codeflow to 
+    search what seems to be the problematic there
+4. if still cant find it, google it by copy the message error
+5. you can use another tools such as chrome breakpoint to see codeflow
+6. or react developer tools chrome extensions, there you can see the component state and
+    code exactly at that component.

@@ -1,5 +1,5 @@
 import React from "react";
-import Card from '../Card';
+import Card from "../Card";
 import MealItem from "../MealItem";
 import styles from "./index.module.css";
 
@@ -33,14 +33,18 @@ const DUMMY_MEALS = [
 function AvailableMeals() {
   const itemList = DUMMY_MEALS.map((item) => {
     return (
-      <MealItem key={item.id} name={item.name} desc={item.description} price={item.price}/>
-    )
+      <MealItem
+        id={item.id}
+        key={item.id}
+        name={item.name}
+        desc={item.description}
+        price={item.price}
+      />
+    );
   });
   return (
     <section className={styles.meals}>
-      <Card>
-        {itemList}
-      </Card>
+      <Card>{itemList}</Card>
     </section>
   );
 }

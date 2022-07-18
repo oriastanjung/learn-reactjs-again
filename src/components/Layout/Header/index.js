@@ -6,13 +6,14 @@ import styles from './index.module.css';;
 
 
 function Header(props) {
+  
   return (
     <>
         <header className={styles['header']}>
             <h1>
                 Flash Meals
             </h1>
-            <HeaderCartButton></HeaderCartButton>
+            <HeaderCartButton onClick={props.onShowCart}/ >
         </header>
         <div className={`${styles['main-image'] }`}>
             <img src={mealsImg} />
